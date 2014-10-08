@@ -20,3 +20,11 @@ Import `native-gateway.unitypackage` and `flurry-bunch.unitypackage` to your pro
 Add `FlurryBunch` script to a game object on your scene. Specify API key in Inspector.
 
 Follow `FlurryBunch` script to get additional information about supported methods.
+
+Related projects
+---
+
+This repository includes prebuild native libraries, the sources are available at the following URLs:
+
+https://github.com/vedi/flurry-bunch-android
+https://github.com/vedi/flurry-bunch-ios
