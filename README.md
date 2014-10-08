@@ -26,5 +26,5 @@ Related projects
 
 This repository includes prebuild native libraries, the sources are available at the following URLs:
 
-https://github.com/vedi/flurry-bunch-android
-https://github.com/vedi/flurry-bunch-ios
+* https://github.com/vedi/flurry-bunch-android
+* https://github.com/vedi/flurry-bunch-ios
