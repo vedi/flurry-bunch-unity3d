@@ -1,0 +1,10 @@
+{
+    "libs": [],
+    "frameworks": [],
+    "headerpaths": [],
+    "files":   [],
+    "folders": [],    
+    "excludes": ["^.*.meta$", "^.*.mdown$", "^.*.pdf$"],
+    "compiler_flags": [],
+    "linker_flags": ["-ObjC"]
+}
