@@ -1,7 +1,7 @@
 Flurry Bunch Unity3d
 ---
 
-It's Unity3d mplementation of Flurry for Native Gateway.
+It's Unity3d implementation of Flurry for Native Gateway.
 
 Native Gateway
 ---
@@ -10,7 +10,7 @@ Native Gateway allows you to create flexible native extension for cross-platform
 
 See implemetation of flurry integration as an example: https://github.com/vedi/flurry-bunch
 
-At the moment we consider Unity3d as a primary target platform, but it's easy to create adaptors for other engimes / frameworks.
+At the moment we consider Unity3d as a primary target platform, but it's easy to create adaptors for other engines / frameworks.
 
 Getting Started
 ---
@@ -26,5 +26,5 @@ Related projects
 
 This repository includes prebuild native libraries, the sources are available at the following URLs:
 
-https://github.com/vedi/flurry-bunch-android
-https://github.com/vedi/flurry-bunch-ios
+* https://github.com/vedi/flurry-bunch-android
+* https://github.com/vedi/flurry-bunch-ios
