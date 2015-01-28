@@ -19,13 +19,20 @@ public class FlurryBunch: MonoBehaviour {
 		if (FlurryBunch.INSTANCE == null) {
 			FlurryBunch.INSTANCE = this;
 			BunchManager.registerBunch(BUNCH);
-			FlurryBunch.INSTANCE.StartSession(ApiKey);
 			GameObject.DontDestroyOnLoad(this);
 		} else {
 			GameObject.Destroy(this.gameObject);
 		}
 	}
 
+	void OnEnable() {
+		FlurryBunch.INSTANCE.StartSession(ApiKey);
+	}
+
+	void OnDisable() {
+		FlurryBunch.INSTANCE.EndSession();
+	}
+	
 	public void StartSession(string apiKey) {
 		Debug.Log("StartSession");
 		NativeGateway.dispatch(
@@ -33,6 +40,15 @@ public class FlurryBunch: MonoBehaviour {
 			"startSession",
 			new Dictionary<string, object> () {{"apiKey", apiKey}}
 		);
+	}
+
+	public void EndSession() {
+		Debug.Log("EndSession");
+		NativeGateway.dispatch(
+			BUNCH,
+			"endSession",
+			null
+			);
 	}
 
 	public void SetAppVersion(string appVersion) {
